@@ -1,7 +1,7 @@
 body {
-    background: linear-gradient(to top, #7a7171, #cec9c9); /* Degradê de cinza escuro para um cinza mais claro de baixo para cima */
-    color: #4d4d4d; /* Cor do texto para melhorar a visibilidade sobre o fundo escuro */
-    font-family: Arial, sans-serif; /* Fontes padrão */
+    background: linear-gradient(to top, #7a7171, #cec9c9); 
+    color: #4d4d4d; 
+    font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
 }
@@ -48,7 +48,7 @@ nav a:hover {
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px;
     justify-content: center;
     padding: 20px;
 }
@@ -68,7 +68,7 @@ nav a:hover {
 .image-gallery1 {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 85px;
     justify-content: center;
     padding: 20px;
 }
@@ -151,6 +151,39 @@ nav a:hover {
     margin-right: 10px;
 }
 
+
+.contact-info-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-info-map a {
+    font-size: 30px;
+    margin: 0 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info-map a:hover {
+    color: #1b1ec9; 
+}
+
+.contact-info-map i {
+    margin-right: 10px;
+}
+
+.contact-info-map {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-info-map i {
+    margin-right: 10px;
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -225,6 +258,67 @@ footer p {
     cursor: pointer;
 }
 
+
+.icon-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.icon-ball {
+    background-color: #f5bf56; 
+    width: 180px;
+    height: 180px;
+    border-radius: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.icon-ball p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.image-gallery1, .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #f5bf56, #995abd); 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.452);
+}
+
+.map-container iframe {
+    border-radius: 8px;
+}
+
 @media (max-width: 768px) {
     nav a {
         float: none;
@@ -284,5 +378,65 @@ footer p {
 
     .social-links a {
         font-size: 14px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .icon-container {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 30px; 
+        height: 100vh; 
+    }
+
+    .icon-ball {
+        width: 150px;  
+        height: 150px;
+        font-size: 28px; 
+    }
+
+    .icon-ball p {
+        font-size: 12px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-container {
+        height: 100vh; 
+    }
+
+    .icon-ball {
+        width: 120px;  
+        height: 120px;
+        font-size: 24px;  
+    }
+
+    .icon-ball p {
+        font-size: 10px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        width: 100%; 
+        padding: 5px; 
+    }
+
+    .map-container iframe {
+        width: 100%; 
+        height: 350px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        padding: 10px; 
+    }
+
+    .map-container iframe {
+        height: 250px; 
     }
 }
